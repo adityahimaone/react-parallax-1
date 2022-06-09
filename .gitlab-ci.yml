@@ -9,6 +9,7 @@ pages:
     paths:
       - node_modules/
   script:
+    - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
     - npm install
     - npm run build
     - cp -a dist/. public/
