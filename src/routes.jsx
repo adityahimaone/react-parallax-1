@@ -9,9 +9,9 @@ export default function routed() {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<ParallaxPage />} />
+          <Route index element={<VideoSection />} />
           <Route path="fullpage" element={<ScrollSnap />} />
-          <Route path="video" element={<VideoSection />} />
+          <Route path="video" element={<ParallaxPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
